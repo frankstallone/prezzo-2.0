@@ -6,7 +6,8 @@
     font-weight: 100;
     font-style: normal;
     src: url("WorkSans-Thin.woff2") format("woff2"),
-         url("WorkSans-Thin.woff") format("woff");
+         url("WorkSans-Thin.woff") format("woff"),
+         url("WorkSans-Thin.otf") format("opentype");
 }
 
 /** WorkSans Thin-Italic **/
@@ -15,7 +16,8 @@
     font-weight: 100;
     font-style: italic;
     src: url("WorkSans-ThinItalic.woff2") format("woff2"),
-         url("WorkSans-ThinItalic.woff") format("woff");
+         url("WorkSans-ThinItalic.woff") format("woff"),
+         url("WorkSans-ThinItalic.otf") format("opentype");
 }
 
 /** WorkSans ExtraLight **/
@@ -24,7 +26,8 @@
     font-weight: 200;
     font-style: normal;
     src: url("WorkSans-ExtraLight.woff2") format("woff2"),
-         url("WorkSans-ExtraLight.woff") format("woff");
+         url("WorkSans-ExtraLight.woff") format("woff"),
+         url("WorkSans-ExtraLight.otf") format("opentype");
 }
 
 /** WorkSans ExtraLight-Italic **/
@@ -33,7 +36,8 @@
     font-weight: 200;
     font-style: italic;
     src: url("WorkSans-ExtraLightItalic.woff2") format("woff2"),
-         url("WorkSans-ExtraLightItalic.woff") format("woff");
+         url("WorkSans-ExtraLightItalic.woff") format("woff"),
+         url("WorkSans-ExtraLightItalic.otf") format("opentype");
 }
 
 /** WorkSans Light **/
@@ -42,7 +46,8 @@
     font-weight: 300;
     font-style: normal;
     src: url("WorkSans-Light.woff2") format("woff2"),
-         url("WorkSans-Light.woff") format("woff");
+         url("WorkSans-Light.woff") format("woff"),
+         url("WorkSans-Light.otf") format("opentype");
 }
 
 /** WorkSans Light-Italic **/
@@ -51,7 +56,8 @@
     font-weight: 300;
     font-style: italic;
     src: url("WorkSans-LightItalic.woff2") format("woff2"),
-         url("WorkSans-LightItalic.woff") format("woff");
+         url("WorkSans-LightItalic.woff") format("woff"),
+         url("WorkSans-LightItalic.otf") format("opentype");
 }
 
 /** WorkSans Regular **/
@@ -60,7 +66,8 @@
     font-weight: 400;
     font-style: normal;
     src: url("WorkSans-Regular.woff2") format("woff2"),
-         url("WorkSans-Regular.woff") format("woff");
+         url("WorkSans-Regular.woff") format("woff"),
+         url("WorkSans-Regular.otf") format("opentype");
 }
 
 /** WorkSans Regular-Italic **/
@@ -69,7 +76,8 @@
     font-weight: 400;
     font-style: italic;
     src: url("WorkSans-Italic.woff2") format("woff2"),
-         url("WorkSans-Italic.woff") format("woff");
+         url("WorkSans-Italic.woff") format("woff"),
+         url("WorkSans-Italic.otf") format("opentype");
 }
 
 /** WorkSans Medium **/
@@ -78,7 +86,8 @@
     font-weight: 500;
     font-style: normal;
     src: url("WorkSans-Medium.woff2") format("woff2"),
-         url("WorkSans-Medium.woff") format("woff");
+         url("WorkSans-Medium.woff") format("woff"),
+         url("WorkSans-Medium.otf") format("opentype");
 }
 
 /** WorkSans Medium-Italic **/
@@ -87,7 +96,8 @@
     font-weight: 500;
     font-style: italic;
     src: url("WorkSans-MediumItalic.woff2") format("woff2"),
-         url("WorkSans-MediumItalic.woff") format("woff");
+         url("WorkSans-MediumItalic.woff") format("woff"),
+         url("WorkSans-MediumItalic.otf") format("opentype");
 }
 
 /** WorkSans SemiBold **/
@@ -96,7 +106,8 @@
     font-weight: 600;
     font-style: normal;
     src: url("WorkSans-SemiBold.woff2") format("woff2"),
-         url("WorkSans-SemiBold.woff") format("woff");
+         url("WorkSans-SemiBold.woff") format("woff"),
+         url("WorkSans-SemiBold.otf") format("opentype");
 }
 
 /** WorkSans SemiBold-Italic **/
@@ -105,7 +116,8 @@
     font-weight: 600;
     font-style: italic;
     src: url("WorkSans-SemiBoldItalic.woff2") format("woff2"),
-         url("WorkSans-SemiBoldItalic.woff") format("woff");
+         url("WorkSans-SemiBoldItalic.woff") format("woff"),
+         url("WorkSans-SemiBoldItalic.otf") format("opentype");
 }
 
 /** WorkSans Bold **/
@@ -114,7 +126,8 @@
     font-weight: 700;
     font-style: normal;
     src: url("WorkSans-Bold.woff2") format("woff2"),
-         url("WorkSans-Bold.woff") format("woff");
+         url("WorkSans-Bold.woff") format("woff"),
+         url("WorkSans-Bold.otf") format("opentype");
 }
 
 /** WorkSans Bold-Italic **/
@@ -123,7 +136,8 @@
     font-weight: 700;
     font-style: italic;
     src: url("WorkSans-BoldItalic.woff2") format("woff2"),
-         url("WorkSans-BoldItalic.woff") format("woff");
+         url("WorkSans-BoldItalic.woff") format("woff"),
+         url("WorkSans-BoldItalic.otf") format("opentype");
 }
 
 /** WorkSans ExtraBold **/
@@ -132,7 +146,8 @@
     font-weight: 800;
     font-style: normal;
     src: url("WorkSans-ExtraBold.woff2") format("woff2"),
-         url("WorkSans-ExtraBold.woff") format("woff");
+         url("WorkSans-ExtraBold.woff") format("woff"),
+         url("WorkSans-ExtraBold.otf") format("opentype");
 }
 
 /** WorkSans ExtraBold-Italic **/
@@ -141,7 +156,8 @@
     font-weight: 800;
     font-style: italic;
     src: url("WorkSans-ExtraBoldItalic.woff2") format("woff2"),
-         url("WorkSans-ExtraBoldItalic.woff") format("woff");
+         url("WorkSans-ExtraBoldItalic.woff") format("woff"),
+         url("WorkSans-ExtraBoldItalic.otf") format("opentype");
 }
 
 /** WorkSans Black **/
@@ -150,7 +166,8 @@
     font-weight: 900;
     font-style: normal;
     src: url("WorkSans-Black.woff2") format("woff2"),
-         url("WorkSans-Black.woff") format("woff");
+         url("WorkSans-Black.woff") format("woff"),
+         url("WorkSans-Black.otf") format("opentype");
 }
 
 /** WorkSans Black-Italic **/
@@ -159,5 +176,6 @@
     font-weight: 900;
     font-style: italic;
     src: url("WorkSans-BlackItalic.woff2") format("woff2"),
-         url("WorkSans-BlackItalic.woff") format("woff");
+         url("WorkSans-BlackItalic.woff") format("woff"),
+         url("WorkSans-BlackItalic.otf") format("opentype");
 }
