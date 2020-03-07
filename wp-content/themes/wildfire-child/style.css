@@ -1,10 +1,10 @@
 /*
-Theme Name: WildFire Child
+Theme Name: Prezzo.it Theme
 Theme URI: http://progressionstudios.com/
 Template: wildfire
 Author: Progression Studios
 Author URI: http://themeforest.net/user/ProgressionStudios
-Description: ThemeForest Photography Premium Theme
+Description: Modified WildFire theme by stallone.dev
 Tags: right-sidebar,flexible-width,custom-menu,editor-style,featured-images,full-width-template,theme-options,translation-ready
 
 ****
@@ -13,7 +13,12 @@ Tags: right-sidebar,flexible-width,custom-menu,editor-style,featured-images,full
 3.0 Grid
 4.0 Page 
 */
+/* TODO: Remove Google fonts */
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+
+/* Local Montserrat */
+@import url("fonts/montserrat/montserrat.css");
+
 /* 1.0 Basic style*/
 body *{
    -webkit-box-sizing: border-box;
@@ -22,7 +27,17 @@ body *{
 /*-----------------*/
 
 
-p,h1,h2,h3,h4,h5,h6,span, a, input,button,div{
+h1 {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700;
+  font-size: 36px;
+}
+h2,h3,h4,h5,h6 {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 600;
+}
+
+p,span, a, input,button,div{
     font-family: "Roboto", sans-serif !important;
 }
 
