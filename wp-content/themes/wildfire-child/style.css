@@ -20,6 +20,9 @@ Tags: right-sidebar,flexible-width,custom-menu,editor-style,featured-images,full
 /* Local Work Sans */
 @import url("fonts/worksans/worksans.css");
 
+/* Color Palette */
+@import url("css/prezzo-color-palette.css");
+
 /* 1.0 Basic style*/
 body *{
    -webkit-box-sizing: border-box;
