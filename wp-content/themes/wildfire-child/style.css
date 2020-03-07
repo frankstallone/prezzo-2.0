@@ -52,12 +52,12 @@ p,span, a, input,button,div{
 /* Footer */
 
 footer {
-  background-color: var(--neutral-800);
+  background-color: var(--neutral-800) !important;
   color: var(--neutral-300);
 }
 
 #footer-widgets {
-  background-color: var(--neutral-700);
+  background-color: var(--neutral-700) !important;
   color: var(--neutral-200);
 }
 
