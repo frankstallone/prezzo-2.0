@@ -64,12 +64,15 @@ div {
 a,
 h3 a:hover,
 .content-container a:hover h4,
-.content-container a:hover h6.post-type-header,
+.content-container a:hover h6.post-type-header {
+  color: var(--primary-600) !important;
+}
+
 .button,
 input.submit,
 input.wpcf7-submit,
 #respond input#submit {
-  color: var(--primary-600) !important;
+  background-color: var(--primary-600) !important;
 }
 
 /* Footer */
