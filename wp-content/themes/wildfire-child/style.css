@@ -83,12 +83,12 @@ footer {
 
 footer a,
 footer a:visited {
-  color: var(--neutral-200)
+  color: var(--neutral-200) !important;
 }
 
 footer a:hover,
 footer a:focus {
-  color: var(--neutral-300)
+  color: var(--neutral-300) !important;
 }
 
 footer,
