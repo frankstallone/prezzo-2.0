@@ -85,12 +85,12 @@ input.wpcf7-submit,
 
 .blog-post-details a,
 .blog-post-details a:visited {
-  color: var(--neutral-300) !important;
+  color: var(--neutral-400) !important;
 }
 
 .blog-post-details a:hover,
 .blog-post-details a:focus {
-  color: var(--neutral-400) !important;
+  color: var(--neutral-500) !important;
 }
 
 /* Footer */
