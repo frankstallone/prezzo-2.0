@@ -1,0 +1,163 @@
+/** =================== WorkSans =================== **/
+
+/** WorkSans Thin **/
+@font-face {
+    font-family: "WorkSans";
+    font-weight: 100;
+    font-style: normal;
+    src: url("WorkSans-Thin.woff2") format("woff2"),
+         url("WorkSans-Thin.woff") format("woff");
+}
+
+/** WorkSans Thin-Italic **/
+@font-face {
+    font-family: "WorkSans";
+    font-weight: 100;
+    font-style: italic;
+    src: url("WorkSans-ThinItalic.woff2") format("woff2"),
+         url("WorkSans-ThinItalic.woff") format("woff");
+}
+
+/** WorkSans ExtraLight **/
+@font-face {
+    font-family: "WorkSans";
+    font-weight: 200;
+    font-style: normal;
+    src: url("WorkSans-ExtraLight.woff2") format("woff2"),
+         url("WorkSans-ExtraLight.woff") format("woff");
+}
+
+/** WorkSans ExtraLight-Italic **/
+@font-face {
+    font-family: "WorkSans";
+    font-weight: 200;
+    font-style: italic;
+    src: url("WorkSans-ExtraLightItalic.woff2") format("woff2"),
+         url("WorkSans-ExtraLightItalic.woff") format("woff");
+}
+
+/** WorkSans Light **/
+@font-face {
+    font-family: "WorkSans";
+    font-weight: 300;
+    font-style: normal;
+    src: url("WorkSans-Light.woff2") format("woff2"),
+         url("WorkSans-Light.woff") format("woff");
+}
+
+/** WorkSans Light-Italic **/
+@font-face {
+    font-family: "WorkSans";
+    font-weight: 300;
+    font-style: italic;
+    src: url("WorkSans-LightItalic.woff2") format("woff2"),
+         url("WorkSans-LightItalic.woff") format("woff");
+}
+
+/** WorkSans Regular **/
+@font-face {
+    font-family: "WorkSans";
+    font-weight: 400;
+    font-style: normal;
+    src: url("WorkSans-Regular.woff2") format("woff2"),
+         url("WorkSans-Regular.woff") format("woff");
+}
+
+/** WorkSans Regular-Italic **/
+@font-face {
+    font-family: "WorkSans";
+    font-weight: 400;
+    font-style: italic;
+    src: url("WorkSans-Italic.woff2") format("woff2"),
+         url("WorkSans-Italic.woff") format("woff");
+}
+
+/** WorkSans Medium **/
+@font-face {
+    font-family: "WorkSans";
+    font-weight: 500;
+    font-style: normal;
+    src: url("WorkSans-Medium.woff2") format("woff2"),
+         url("WorkSans-Medium.woff") format("woff");
+}
+
+/** WorkSans Medium-Italic **/
+@font-face {
+    font-family: "WorkSans";
+    font-weight: 500;
+    font-style: italic;
+    src: url("WorkSans-MediumItalic.woff2") format("woff2"),
+         url("WorkSans-MediumItalic.woff") format("woff");
+}
+
+/** WorkSans SemiBold **/
+@font-face {
+    font-family: "WorkSans";
+    font-weight: 600;
+    font-style: normal;
+    src: url("WorkSans-SemiBold.woff2") format("woff2"),
+         url("WorkSans-SemiBold.woff") format("woff");
+}
+
+/** WorkSans SemiBold-Italic **/
+@font-face {
+    font-family: "WorkSans";
+    font-weight: 600;
+    font-style: italic;
+    src: url("WorkSans-SemiBoldItalic.woff2") format("woff2"),
+         url("WorkSans-SemiBoldItalic.woff") format("woff");
+}
+
+/** WorkSans Bold **/
+@font-face {
+    font-family: "WorkSans";
+    font-weight: 700;
+    font-style: normal;
+    src: url("WorkSans-Bold.woff2") format("woff2"),
+         url("WorkSans-Bold.woff") format("woff");
+}
+
+/** WorkSans Bold-Italic **/
+@font-face {
+    font-family: "WorkSans";
+    font-weight: 700;
+    font-style: italic;
+    src: url("WorkSans-BoldItalic.woff2") format("woff2"),
+         url("WorkSans-BoldItalic.woff") format("woff");
+}
+
+/** WorkSans ExtraBold **/
+@font-face {
+    font-family: "WorkSans";
+    font-weight: 800;
+    font-style: normal;
+    src: url("WorkSans-ExtraBold.woff2") format("woff2"),
+         url("WorkSans-ExtraBold.woff") format("woff");
+}
+
+/** WorkSans ExtraBold-Italic **/
+@font-face {
+    font-family: "WorkSans";
+    font-weight: 800;
+    font-style: italic;
+    src: url("WorkSans-ExtraBoldItalic.woff2") format("woff2"),
+         url("WorkSans-ExtraBoldItalic.woff") format("woff");
+}
+
+/** WorkSans Black **/
+@font-face {
+    font-family: "WorkSans";
+    font-weight: 900;
+    font-style: normal;
+    src: url("WorkSans-Black.woff2") format("woff2"),
+         url("WorkSans-Black.woff") format("woff");
+}
+
+/** WorkSans Black-Italic **/
+@font-face {
+    font-family: "WorkSans";
+    font-weight: 900;
+    font-style: italic;
+    src: url("WorkSans-BlackItalic.woff2") format("woff2"),
+         url("WorkSans-BlackItalic.woff") format("woff");
+}
