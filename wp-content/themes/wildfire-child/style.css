@@ -75,6 +75,24 @@ input.wpcf7-submit,
   background-color: var(--primary-600) !important;
 }
 
+/* Homepage */
+
+.home-banner__ctx a {
+  color: #fff !important;
+}
+
+/* Blog */
+
+.blog-post-details a,
+.blog-post-details a:visited {
+  color: var(--neutral-300) !important;
+}
+
+.blog-post-details a:hover,
+.blog-post-details a:focus {
+  color: var(--neutral-400) !important;
+}
+
 /* Footer */
 
 footer {
