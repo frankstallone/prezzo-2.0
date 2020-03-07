@@ -80,6 +80,17 @@ input.wpcf7-submit,
 footer {
   background-color: var(--neutral-800) !important;
 }
+
+footer a,
+footer a:visited {
+  color: var(--neutral-200)
+}
+
+footer a:hover,
+footer a:focus {
+  color: var(--neutral-300)
+}
+
 footer,
 footer #copyright {
   color: var(--neutral-300);
