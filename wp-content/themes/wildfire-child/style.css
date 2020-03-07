@@ -24,12 +24,13 @@ Tags: right-sidebar,flexible-width,custom-menu,editor-style,featured-images,full
 @import url("css/prezzo-color-palette.css");
 
 /* 1.0 Basic style*/
-body *{
+body * {
    -webkit-box-sizing: border-box;
            box-sizing: border-box;
            font-size: 16px;
-           color: var(--neutral-900);
 }
+
+body {color: var(--neutral-900);}
 /*-----------------*/
 
 h1 {
@@ -55,7 +56,7 @@ footer {
   background-color: var(--neutral-800) !important;
 }
 footer,
-footer #copywrite {
+footer #copyright {
   color: var(--neutral-300);
 }
 
