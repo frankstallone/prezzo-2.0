@@ -49,6 +49,18 @@ p,span, a, input,button,div{
     font-weight: 400;
 }
 
+/* Footer */
+
+footer {
+  background-color: var(--neutral-800);
+  color: var(--neutral-300);
+}
+
+#footer-widgets {
+  background-color: var(--neutral-700);
+  color: var(--neutral-200);
+}
+
 /*2.0 Helpers*/
 .image-box{
    position: relative;
