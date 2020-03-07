@@ -613,12 +613,12 @@ a.progression-red:hover {background:<?php echo get_theme_mod('button_hover_bg', 
 #sidebar .social-icons a:hover {background-color: <?php echo get_theme_mod('button_hover_bg', '#484f61'); ?>; }
 #sidebar .social-icons a:hover:before { border-color: transparent transparent <?php echo get_theme_mod('button_hover_bg', '#484f61'); ?>;}
 #sidebar .social-icons a:hover:after {border-color:  <?php echo get_theme_mod('button_hover_bg', '#484f61'); ?> transparent transparent;}
-/* body {color:<?php echo get_theme_mod('body_text', '#777777'); ?>;} */
+body {color:<?php echo get_theme_mod('body_text', '#777777'); ?>;}
 .sf-menu a, .sf-menu a:hover, .sf-menu a:visited, header .social-icons a  {color:<?php echo get_theme_mod('navigation_text', '#ffffff'); ?>; }
-/* h1.page-title { color:<?php echo get_theme_mod('page_title_text', '#2f2f2f'); ?>; } */
+h1.page-title { color:<?php echo get_theme_mod('page_title_text', '#2f2f2f'); ?>; }
 a, h3 a:hover, .content-container a:hover h4, .content-container a:hover h6.post-type-header {color:<?php echo get_theme_mod('link_color', '#f46553'); ?>; }
 a:hover {color:<?php echo get_theme_mod('link_hover_color', '#484f61'); ?>;}
-/* h1, h2, h3, h4, h5, h6, h3 a {color:<?php echo get_theme_mod('headings_default_color', '#2f2f2f'); ?>; } */
+h1, h2, h3, h4, h5, h6, h3 a {color:<?php echo get_theme_mod('headings_default_color', '#2f2f2f'); ?>; }
 #sidebar h5 {color:<?php echo get_theme_mod('sidebar_headings_default', '#444444'); ?>; }
 footer {color:<?php echo get_theme_mod('footer_text_color', '#cbcbcb'); ?>; }
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer a {color:<?php echo get_theme_mod('footer_link_color', '#ffffff'); ?>;}
