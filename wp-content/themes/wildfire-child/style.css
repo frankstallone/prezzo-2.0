@@ -19,13 +19,16 @@ Tags: right-sidebar,flexible-width,custom-menu,editor-style,featured-images,full
 /* Local Montserrat */
 @import url("fonts/montserrat/montserrat.css");
 
+/* Local Work Sans */
+@import url("fonts/worksans/worksans.css");
+
 /* 1.0 Basic style*/
 body *{
    -webkit-box-sizing: border-box;
            box-sizing: border-box;
+           font-size: 16px;
 }
 /*-----------------*/
-
 
 h1 {
   font-family: 'Montserrat', sans-serif !important;
@@ -38,7 +41,8 @@ h2,h3,h4,h5,h6 {
 }
 
 p,span, a, input,button,div{
-    font-family: "Roboto", sans-serif !important;
+    font-family: 'Work Sans', sans-serif !important;
+    font-weight: 400;
 }
 
 /*2.0 Helpers*/
