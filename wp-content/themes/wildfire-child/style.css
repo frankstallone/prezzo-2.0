@@ -53,11 +53,17 @@ p,span, a, input,button,div{
 
 footer {
   background-color: var(--neutral-800) !important;
+}
+footer,
+footer #copywrite {
   color: var(--neutral-300);
 }
 
 #footer-widgets {
   background-color: var(--neutral-700) !important;
+}
+#footer-widgets,
+#footer-widgets #text-2 {
   color: var(--neutral-200);
 }
 
