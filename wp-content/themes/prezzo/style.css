@@ -49,3 +49,13 @@ div {
   font-family: "Work Sans", sans-serif !important;
   font-weight: 400;
 }
+
+a,
+a:visited {
+    color: var(--primary-600) !important;
+}
+
+a:hover,
+a:focus {
+    box-shadow: inset 0 -.07em 0 var(--primary-600);
+}
