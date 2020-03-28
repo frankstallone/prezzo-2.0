@@ -1,0 +1,19 @@
+/*
+ Theme Name:   Prezzo.it
+ Description:  Custom WordPress theme for Prezzo.it
+ Author:       Frank Stallone
+ Author URI:   http://stallone.dev
+ Template:     Divi
+ Version:      3.2.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* Local Montserrat */
+@import url("fonts/montserrat/montserrat.css");
+
+/* Local Work Sans */
+@import url("fonts/worksans/worksans.css");
+
+/* Color Palette */
+@import url("css/prezzo-color-palette.css");
