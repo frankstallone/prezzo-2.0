@@ -82,13 +82,20 @@ header.et-l.et-l--header {
 .et_pb_section_1 {
     background: var(--green-100);
 }
+.et_pb_section_1 .et_pb_text_inner {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
 
 .prezzo-circle {
     display: flex;
+    flex-shrink: 0;
     background: var(--green-100);
     border-radius: 100%;
-    border: 8px solid var(--green-700);
-    font-size: 36px;
+    border: 6px solid var(--green-700);
+    font-size: 48px;
     font-weight: 700;
     color: var(--green-700);
     padding: 20px;
@@ -98,3 +105,51 @@ header.et-l.et-l--header {
     justify-content: center;
     align-items: center;
 }
+
+.prezzo-step {
+    margin-left: 24px;
+    color: var(--neutral-700);
+    line-height: 1.7rem;
+}
+
+@media all and (max-width: 980px) {
+    .et_pb_section_1 .et_pb_text_inner {
+        justify-content: left;
+    }
+}
+
+
+/* Quick reference guide to Divi's breakpoints */
+
+/* Responsive Styles Large Desktop And Above */
+/* @media all and (min-width: 1405px) {} */
+
+/* Responsive Styles Standard Desktop Only */
+/* @media all and (min-width: 1100px) and (max-width: 1405px) {}*/
+
+/* Responsive Styles Standard Desktop Only */
+/* @media all and (min-width: 981px) and (max-width: 1405px) {} */
+
+/* Responsive Styles Desktop Only */
+/* @media all and (min-width: 981px) {} */
+
+/* Responsive Styles 981px - 1100px */
+/* @media all and (min-width: 981px) and (max-width: 1100px) {} */
+
+/* Responsive Styles Tablet And Below */
+/* @media all and (max-width: 980px) {} */
+
+/* Responsive Styles 782px */
+/* @media screen and (max-width: 782px) {} */
+
+/* Responsive Styles Tablet Portrait */
+/* @media all and (max-width: 768px) {} */
+
+/* Responsive Styles Smartphone Only */
+/* @media all and (max-width: 767px) {} */
+
+/* Responsive Styles Smartphone Portrait */
+/* @media all and (max-width: 479px) {} */
+
+/* Printscreen Styles */
+/* @media print {} */
