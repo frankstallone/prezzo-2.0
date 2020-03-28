@@ -69,3 +69,32 @@ header.et-l.et-l--header {
 }
 
 /* Home page */
+
+
+/* First Section */
+
+.et_pb_section_0 h1 {
+    color: var(--neutral-100)
+}
+
+/* 1-2-3 Section */
+
+.et_pb_section_1 {
+    background: var(--green-100);
+}
+
+.prezzo-circle {
+    display: flex;
+    background: var(--green-100);
+    border-radius: 100%;
+    border: 8px solid var(--green-700);
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--green-700);
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
