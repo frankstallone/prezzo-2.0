@@ -59,3 +59,13 @@ a:hover,
 a:focus {
     box-shadow: inset 0 -.07em 0 var(--primary-600);
 }
+
+/* Global Header */
+
+/* Get's the mobile menu above other sections */
+header.et-l.et-l--header {
+    position: relative;
+    z-index: 2;
+}
+
+/* Home page */
