@@ -201,8 +201,13 @@ header.et-l.et-l--header {
   font-size: 24px;
 }
 
+#benefits ul {
+  padding-left: 0;
+}
+
 #benefits ul li {
   margin-bottom: 1.7rem;
+  list-style-type: none;
 }
 
 /* Specials */
@@ -222,31 +227,54 @@ header.et-l.et-l--header {
 
 #specials a,
 #specials a:visited {
-    color: var(--neutral-700);
+  color: var(--neutral-700);
 }
 
 #specials a:hover,
 #specials a:focus {
-    color: var(--neutral-500);
-    box-shadow: none;
-    outline: 4px solid var(--neutral-500);
+  color: var(--neutral-500);
+  box-shadow: none;
+  outline: 4px solid var(--neutral-500);
 }
 
 /* Home Blog Posts Section */
+
+#blog-posts a,
+#blog-posts a:visited {
+  color: var(--yellow-800);
+}
+#blog-posts a:hover,
+#blog-posts a:focus {
+  color: var(--yellow-700);
+  box-shadow: inset 0 -0.07em 0 var(--yellow-700);
+}
+
 #blog-posts .entry-title a:hover,
 #blog-posts .entry-title a:focus,
 #blog-posts .entry-featured-image-url:hover,
 #blog-posts .entry-featured-image-url:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 #blog-posts .entry-title a:hover,
 #blog-posts .entry-title a:focus {
-    color: var(--yellow-800);
-    outline: 2px solid var(--yellow-800);
+  color: var(--yellow-800);
+  outline: 2px solid var(--yellow-800);
 }
 #blog-posts .post-content p {
-    color: var(--yellow-900)
+  color: var(--yellow-900);
+}
+
+/* Footer */
+
+#prezzo-footer #social-icons a,
+#prezzo-footer #social-icons a:visited {
+  font-size: 36px;
+}
+
+#prezzo-footer #social-icons a:focus,
+#prezzo-footer #social-icons a:hover {
+  box-shadow: none;
 }
 
 /* Quick reference guide to Divi's breakpoints */
