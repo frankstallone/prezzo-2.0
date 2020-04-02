@@ -29,6 +29,18 @@ function footer_scripts()
 <?php
 }
 
+// This will hide the Divi "Project" post type.
+add_filter( 'et_project_posttype_args', 'remove_project_post_type', 10, 1 );
+function remove_project_post_type( $args ) {
+	return array_merge( $args, array(
+		'public'              => false,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => false,
+		'show_in_nav_menus'   => false,
+		'show_ui'             => false
+	));
+}
+
 // Execute
 add_action('wp_footer', 'footer_scripts');
 
