@@ -89,6 +89,10 @@ header.et-l.et-l--header {
   z-index: 2;
 }
 
+#main-header {
+  box-shadow: none;
+}
+
 #main-header .et_pb_row {
   align-items: center;
 }
@@ -105,6 +109,92 @@ header.et-l.et-l--header {
   opacity: 1;
   box-shadow: inset 0 -0.125em 0 var(--primary-600);
 }
+
+#prezzo-logo a:hover,
+#prezzo-logo a:focus {
+  box-shadow: none;
+}
+
+/* Inputs */
+
+input.text,
+input.title,
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="text"],
+.widget_search input#s,
+select,
+textarea {
+  color: var(--neutral-900);
+  border: 1px solid var(--neutral-700);
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+input.text:focus,
+input.title:focus,
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--neutral-700);
+}
+
+input[type="submit"],
+.widget_search input#searchsubmit {
+  background: var(--primary-600);
+  color: var(--primary-100);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 16px;
+  font-weight: 500;
+}
+.widget_search input#searchsubmit {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  background: var(--primary-800);
+}
+
+input[type="checkbox"]:focus {
+  outline: 2px solid var(--primary-200);
+}
+
+/* Global Sections */
+
+/* Override for .et_pb_section */
+@media all and (min-width: 981px) {
+  .et_pb_section {
+    padding-top: 0;
+  }
+}
+
+/* Contact Form 7 */
+
+.contact-form-border-input .required {
+  color: var(--pink-500);
+}
+.contact-form-border,
+.contact-form-border-input {
+  margin-bottom: 1rem;
+}
+
+.wpcf7-form-control {
+  width: 100%;
+}
+
+/* Contact page Form */
+
+#contact-page .privacy-check span.wpcf7-list-item-label {
+  display: none;
+}
+
 
 /* Mobile Menu */
 
@@ -138,10 +228,7 @@ header.et-l.et-l--header {
     flex-direction: column;
     justify-content: left;
   }
-  .prezzo-step {
-    margin-left: 0;
-    margin-top: 16px;
-  }
+
 }
 
 /* Home page */
@@ -150,6 +237,10 @@ header.et-l.et-l--header {
 
 #hero-banner h1 {
   color: var(--neutral-100);
+}
+
+#global-sidebar {
+  border-right: none;
 }
 
 /* 1-2-3 Section */
@@ -179,7 +270,7 @@ header.et-l.et-l--header {
 
 .prezzo-step {
   margin-left: 24px;
-  color: var(--neutral-700);
+  color: var(--green-900);
   line-height: 1.7rem;
 }
 
@@ -264,6 +355,11 @@ header.et-l.et-l--header {
 #blog-posts .post-content p {
   color: var(--yellow-900);
 }
+
+
+/* Blogroll  */
+
+/* #prezzo-blogroll {} */
 
 /* Footer */
 
