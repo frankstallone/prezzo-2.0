@@ -4,7 +4,7 @@
  Author:       Frank Stallone
  Author URI:   http://stallone.dev
  Template:     Divi
- Version:      3.2.0
+ Version:      2.5.20
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -81,39 +81,24 @@ a:focus {
   box-shadow: inset 0 -0.07em 0 var(--primary-600);
 }
 
-/* Global Header */
+/* 
+ * Prezzo Icons
+ * For font-awesome https://fontawesome.com/how-to-use/on-the-web/advanced/css-pseudo-elements
+ *
+ */
 
-/* Get's the mobile menu above other sections */
-header.et-l.et-l--header {
-  position: relative;
-  z-index: 2;
+
+.prezzo-icon,
+.et_pb_button.prezzo-icon,
+#hero-button.et_pb_button.prezzo-icon {
+  display: inline-block !important;
+  font-style: normal !important;
+  font-variant: normal !important;
+  text-rendering: auto !important;
+  -webkit-font-smoothing: antialiased !important;
 }
 
-#main-header {
-  box-shadow: none;
-}
 
-#main-header .et_pb_row {
-  align-items: center;
-}
-
-/* Navigation */
-
-#main-header a,
-#main-header a:visited {
-  font-weight: 600;
-}
-
-#main-header a:hover,
-#main-header a:focus {
-  opacity: 1;
-  box-shadow: inset 0 -0.125em 0 var(--primary-600);
-}
-
-#prezzo-logo a:hover,
-#prezzo-logo a:focus {
-  box-shadow: none;
-}
 
 /* Inputs */
 
@@ -194,41 +179,68 @@ input[type="checkbox"]:focus {
 #contact-page .privacy-check span.wpcf7-list-item-label {
   display: none;
 }
+/* Global Header */
 
+/* Get's the mobile menu above other sections */
+header.et-l.et-l--header {
+  position: relative;
+  z-index: 2;
+}
 
 /* Mobile Menu */
 
-#main-header .et_pb_menu_0_tb_header .mobile_nav .mobile_menu_bar:before {
+#prezzo-header .et_pb_row {
+  align-items: center;
+}
+
+/* Navigation */
+
+#prezzo-header a,
+#prezzo-header a:visited {
+  font-weight: 600;
+}
+
+#prezzo-header a:hover,
+#prezzo-header a:focus {
+  opacity: 1;
+  box-shadow: inset 0 -0.125em 0 var(--primary-600);
+}
+
+#prezzo-logo a:hover,
+#prezzo-logo a:focus {
+  box-shadow: none;
+}
+
+#prezzo-header .et_pb_menu_0_tb_header .mobile_nav .mobile_menu_bar:before {
   color: var(--primary-800);
 }
 
-#main-header .et_mobile_menu {
+#prezzo-header .et_mobile_menu {
   border-top: none;
 }
 
 /* Responsive Styles Tablet And Below */
 @media all and (max-width: 980px) {
-  #main-header .et_pb_row {
+  #prezzo-header .et_pb_row {
     display: flex;
   }
-  #main-header .et_pb_column {
+  #prezzo-header .et_pb_column {
     margin-bottom: 0;
   }
-  #main-header .et_pb_column_2_5 {
+  #prezzo-header .et_pb_column_2_5 {
     width: 36.7%;
   }
-  #main-header .et_pb_column_3_5 {
+  #prezzo-header .et_pb_column_3_5 {
     width: 57.8%;
   }
-  #main-header .mobile_nav:hover,
-  #main-header .mobile_nav:focus {
+  #prezzo-header .mobile_nav:hover,
+  #prezzo-header .mobile_nav:focus {
     box-shadow: none;
   }
-  #main-header .et_mobile_nav_menu {
+  #prezzo-header .et_mobile_nav_menu {
     flex-direction: column;
     justify-content: left;
   }
-
 }
 
 /* Home page */
@@ -238,6 +250,69 @@ input[type="checkbox"]:focus {
 #hero-banner h1 {
   color: var(--neutral-100);
 }
+
+/* Hero Actors */
+
+@media all and (max-width: 980px) {
+  #hero-actors {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+}
+
+/* Hero Content  */
+
+#hero-content .et_pb_button {
+  border: none !important;
+}
+
+#hero-content .et_pb_button:hover,
+#hero-content .et_pb_button:focus {
+  background-color: var(--purple-800) !important;
+  color: var(--purple-100) !important;
+}
+
+body #page-container .et_pb_section #hero-button.et_pb_button::before,
+body #page-container .et_pb_section #hero-button.et_pb_button_0::before,
+body #page-container .et_pb_section #hero-button.et_pb_button_1::before,
+body #page-container .et_pb_section #hero-button-mobile.et_pb_button::before,
+body #page-container .et_pb_section #hero-button-mobile.et_pb_button_0::before,
+body #page-container .et_pb_section #hero-button-mobile.et_pb_button_1::before {
+  display: inline-block !important;
+  font-family: "Font Awesome 5 Duotone";
+  font-weight: 900;
+  content: "\f007";
+  color: var(--purple-700);
+}
+
+/* #hero-button-mobile {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  content: "\f007";
+  }
+} */
+
+
+@media all and (max-width: 980px) {
+  #hero-content {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  #hero-content .et_pb_column {
+    width: auto;
+  }
+
+  #hero-content .et_pb_column:first-child,
+  #hero-content .et_pb_column:last-child {
+    flex: 1 1 2rem;
+  }
+
+  #hero-content .et_pb_column:nth-child(2) {
+    flex: 1 1 auto;
+  }
+}
+
+/* Sidebar */
 
 #global-sidebar {
   border-right: none;
@@ -256,10 +331,10 @@ input[type="checkbox"]:focus {
   display: flex;
   flex-shrink: 0;
   border-radius: 100%;
-  border: 6px solid var(--green-700);
+  border: 6px solid var(--red-800);
   font-size: 48px;
   font-weight: 700;
-  color: var(--green-700);
+  color: var(--red-800);
   padding: 20px;
   width: 100px;
   height: 100px;
@@ -270,7 +345,7 @@ input[type="checkbox"]:focus {
 
 .prezzo-step {
   margin-left: 24px;
-  color: var(--green-900);
+  color: var(--red-900);
   line-height: 1.7rem;
 }
 
@@ -355,7 +430,6 @@ input[type="checkbox"]:focus {
 #blog-posts .post-content p {
   color: var(--yellow-900);
 }
-
 
 /* Blogroll  */
 
