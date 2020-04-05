@@ -317,7 +317,6 @@ header.et-l.et-l--header {
   display: flex;
   flex-shrink: 0;
   border-radius: 100%;
-  border: 5px solid var(--red-800);
   font-size: 48px;
   font-weight: 500;
   color: var(--red-800);
@@ -327,6 +326,7 @@ header.et-l.et-l--header {
   text-align: center;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .prezzo-step {
@@ -335,6 +335,30 @@ header.et-l.et-l--header {
   margin-left: 24px;
   color: var(--red-900);
   line-height: 1.7rem;
+  position: relative;
+  z-index: 1;
+}
+.prezzo-circle .prezzo-step-number {
+  font-weight: 600;
+  color: var(--pink-700);
+}
+
+.prezzo-step .prezzo-step-text {
+  display: inline-block;
+  background-color: hsla(5, 96%, 91%, 0.7);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.prezzo-step svg,
+.prezzo-circle svg {
+  position: absolute;
+  font-size: 8rem;
+  top: -1rem;
+  left: -1rem;
+  transform: rotate(-5deg);
+  color: var(--pink-200);
+  z-index: -1;
 }
 
 /* Responsive Styles Tablet And Below */
@@ -350,10 +374,6 @@ header.et-l.et-l--header {
 }
 
 /* Benefits Section */
-
-#benefits {
-  font-size: 24px;
-}
 
 #benefits ul {
   padding-left: 0;
@@ -380,31 +400,20 @@ header.et-l.et-l--header {
   top: -2rem;
   left: -2rem;
   transform: rotate(5deg);
-  color: var(--primary-200);
+  color: var(--red-300);
   z-index: -1;
 }
 
 #benefits .prezzo-benefit-text {
   font-size: 20px;
-  font-size: 20px;
   display: inline-block;
   background-color: hsla(206, 66%, 86%, 0.7);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   padding: 1rem;
 }
 
 /* Responsive Styles Smartphone Only */
 @media all and (max-width: 767px) {
-  /* #benefits ul li svg {
-    position: initial;
-    font-size: inherit;
-    top: initial;
-    left: initial;
-    transform: none;
-    color: var(--primary-1000);
-    z-index: 0;
-  } */
-
   #benefits ul li {
     margin-bottom: 3rem;
   }
