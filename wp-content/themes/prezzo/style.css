@@ -4,7 +4,7 @@
  Author:       Frank Stallone
  Author URI:   http://stallone.dev
  Template:     Divi
- Version:      2.5.20
+ Version:      2.5.30
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -87,18 +87,13 @@ a:focus {
  *
  */
 
-
-.prezzo-icon,
-.et_pb_button.prezzo-icon,
-#hero-button.et_pb_button.prezzo-icon {
+.prezzo-icon {
   display: inline-block !important;
   font-style: normal !important;
   font-variant: normal !important;
   text-rendering: auto !important;
   -webkit-font-smoothing: antialiased !important;
 }
-
-
 
 /* Inputs */
 
@@ -272,27 +267,17 @@ header.et-l.et-l--header {
   color: var(--purple-100) !important;
 }
 
-body #page-container .et_pb_section #hero-button.et_pb_button::before,
-body #page-container .et_pb_section #hero-button.et_pb_button_0::before,
-body #page-container .et_pb_section #hero-button.et_pb_button_1::before,
-body #page-container .et_pb_section #hero-button-mobile.et_pb_button::before,
-body #page-container .et_pb_section #hero-button-mobile.et_pb_button_0::before,
-body #page-container .et_pb_section #hero-button-mobile.et_pb_button_1::before {
+/* Example of how to get Font Awesome icon before text in button */
+
+/* #hero-button.et_pb_button::before {
   display: inline-block !important;
   font-family: "Font Awesome 5 Duotone";
   font-weight: 900;
-  content: "\f007";
+  content: "\f277";
   color: var(--purple-700);
-}
-
-/* #hero-button-mobile {
-  font-family: "Font Awesome 5 Pro";
-  font-weight: 900;
-  content: "\f007";
-  }
 } */
 
-
+/* Responsive Styles Tablet And Below */
 @media all and (max-width: 980px) {
   #hero-content {
     display: flex;
@@ -308,7 +293,8 @@ body #page-container .et_pb_section #hero-button-mobile.et_pb_button_1::before {
   }
 
   #hero-content .et_pb_column:nth-child(2) {
-    flex: 1 1 auto;
+    /* flex: 1 1 auto; */
+    display: none;
   }
 }
 
@@ -331,9 +317,9 @@ body #page-container .et_pb_section #hero-button-mobile.et_pb_button_1::before {
   display: flex;
   flex-shrink: 0;
   border-radius: 100%;
-  border: 6px solid var(--red-800);
+  border: 5px solid var(--red-800);
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 500;
   color: var(--red-800);
   padding: 20px;
   width: 100px;
@@ -344,6 +330,8 @@ body #page-container .et_pb_section #hero-button-mobile.et_pb_button_1::before {
 }
 
 .prezzo-step {
+  font-family: "Work Sans", sans-serif !important;
+  font-weight: 500;
   margin-left: 24px;
   color: var(--red-900);
   line-height: 1.7rem;
@@ -374,6 +362,52 @@ body #page-container .et_pb_section #hero-button-mobile.et_pb_button_1::before {
 #benefits ul li {
   margin-bottom: 1.7rem;
   list-style-type: none;
+  position: relative;
+  margin-bottom: 5rem;
+}
+#benefits ul li:last-child {
+  margin-bottom: 0;
+}
+
+#benefits ul li .prezzo-benefit {
+  position: relative;
+  z-index: 1;
+}
+
+#benefits ul li svg {
+  position: absolute;
+  font-size: 4rem;
+  top: -2rem;
+  left: -2rem;
+  transform: rotate(5deg);
+  color: var(--primary-200);
+  z-index: -1;
+}
+
+#benefits .prezzo-benefit-text {
+  font-size: 20px;
+  font-size: 20px;
+  display: inline-block;
+  background-color: hsla(206, 66%, 86%, 0.7);
+  border-radius: .5rem;
+  padding: 1rem;
+}
+
+/* Responsive Styles Smartphone Only */
+@media all and (max-width: 767px) {
+  /* #benefits ul li svg {
+    position: initial;
+    font-size: inherit;
+    top: initial;
+    left: initial;
+    transform: none;
+    color: var(--primary-1000);
+    z-index: 0;
+  } */
+
+  #benefits ul li {
+    margin-bottom: 3rem;
+  }
 }
 
 /* Specials */
