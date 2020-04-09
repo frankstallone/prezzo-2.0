@@ -4,7 +4,7 @@
  Author:       Frank Stallone
  Author URI:   http://stallone.dev
  Template:     Divi
- Version:      2.5.30
+ Version:      2.6
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -34,7 +34,8 @@ h6 {
   color: var(--neutral-500);
 }
 
-h1 {
+h1,
+#all-blog-post-page .et_pb_title_container h1 {
   font-weight: 600;
   font-size: 36px;
   color: var(--neutral-700);
@@ -62,7 +63,11 @@ input,
 button,
 div {
   font-family: "Work Sans", sans-serif !important;
-  font-weight: 400;
+  font-weight: 500;
+}
+
+strong {
+  font-weight: 600;
 }
 
 a,
@@ -97,15 +102,18 @@ a:focus {
 
 /* Inputs */
 
+input,
 input.text,
 input.title,
 input[type="email"],
 input[type="password"],
 input[type="tel"],
 input[type="text"],
-.widget_search input#s,
+input[type="search"],
 select,
-textarea {
+textarea,
+/* Divi sidebar search */
+.widget_search input#s {
   color: var(--neutral-900);
   border: 1px solid var(--neutral-700);
   background-color: #fff;
@@ -114,15 +122,19 @@ textarea {
   font-size: 1rem;
 }
 
+input,
 input.text:focus,
 input.title:focus,
 input[type="text"]:focus,
+input[type="search"]:focus,
 select:focus,
 textarea:focus {
-  border-color: var(--neutral-700);
+  border-color: var(--neutral-500);
 }
-
+/* Contact From 7 & GeoDiectory */
 input[type="submit"],
+input[type="button"],
+button.geodir_button,
 .widget_search input#searchsubmit {
   background: var(--primary-600);
   color: var(--primary-100);
@@ -138,7 +150,13 @@ input[type="submit"],
 }
 
 input[type="submit"]:hover,
-input[type="submit"]:focus {
+input[type="submit"]:focus,
+input[type="button"]:hover,
+input[type="button"]:focus,
+button.geodir_button:hover,
+button.geodir_button:focus,
+.widget_search input#searchsubmit:hover,
+.widget_search input#searchsubmit:focus {
   background: var(--primary-800);
 }
 
@@ -147,6 +165,167 @@ input[type="checkbox"]:focus {
 }
 
 /* Global Sections */
+
+/* GeoDirectory Overrides */
+.select2-container .select2-selection,
+.select2-container.gd-select2-container .select2-selection,
+.select2-container.gd-select2-container.select2-container--focus
+  .select2-selection,
+.select2-container.gd-select2-container.select2-container--open
+  .select2-selection {
+  border: 1px solid var(--neutral-500);
+  border-radius: 0.5rem;
+}
+
+.select2-container.gd-select2-container .select2-dropdown {
+  border-color: var(--neutral-500);
+}
+
+.gd-locate-me .gd-locate-me-btn {
+  color: var(--neutral-700) !important;
+  border-top-right-radius: 0.5rem !important;
+  border-bottom-right-radius: 0.5rem !important;
+}
+.gd-input-group-addon {
+  background-color: var(--neutral-200) !important;
+  border: 1px solid var(--neutral-700) !important;
+}
+
+/* Select 2 */
+
+/* Remove border radius when select2 dropdown open */
+.select2-container--open .select2-search__field {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+/* Selected items on select2 dropdown */
+.select2-container.gd-select2-container
+  .select2-results__option--highlighted[aria-selected] {
+  background-color: var(--primary-500);
+  color: var(--primary-100);
+}
+
+.select2-container.gd-select2-container
+  .select2-selection--single
+  .select2-selection__placeholder {
+  color: var(--neutral-400);
+}
+
+.select2-selection--single .select2-selection__placeholder {
+  line-height: 0;
+}
+
+strong.select2-results__group {
+  color: var(--neutral-600);
+  font-weight: 600;
+  background-color: var(--neutral-200);
+}
+
+/* Required Fields */
+.geodir-required,
+.geodir_form_row label span {
+  color: var(--pink-500);
+}
+
+#geodirectory-add-post h5 {
+  border-color: var(--neutral-300);
+}
+
+/* GeoDirectories notifications */
+
+.gd-notification {
+  font-size: 16px;
+  font-weight: 500;
+  background: var(--pink-700);
+  color: var(--pink-100);
+  border-radius: 0.5rem;
+  line-height: 1.5rem;
+  margin: 1rem 0;
+  padding: 1rem 3rem 1rem 1rem;
+}
+
+.gd-notification .gd-notification-dismiss {
+  top: 1rem;
+  right: 1.25rem;
+}
+
+.gd-notification a,
+.gd-notification a:visited {
+  color: var(--pink-100) !important;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.gd-notification a:hover,
+.gd-notification a:focus {
+  color: var(--pink-200) !important;
+  box-shadow: inset 0 -0.07em 0 var(--pink-200);
+}
+
+/* Uploads */
+
+.geodir-add-files .geodir-files-dropbox {
+  border: 4px dashed var(--neutral-300);
+  padding: 4rem;
+  margin: 1rem 0;
+}
+
+.geodir-add-files .geodir-files-dropbox .geodir-dropbox-title {
+  color: var(--neutral-800);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Field notes */
+.geodir_message_note,
+/* Uploads */
+.geodir-add-files .geodir-files-dropbox .plupload-thumbs,
+.geodir-add-files .geodir-files-dropbox .geodir-dropbox-file-types,
+.geodir-add-files .geodir-files-dropbox .geodir-dropbox-file-limit {
+  color: var(--neutral-500);
+}
+
+.geodir_message_note {
+  font-size: 12px;
+  padding-bottom: 0.5rem;
+  padding-top: 0.25rem;
+}
+
+.geodir-add-files .geodir-files-dropbox .geodir_button {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.filelist {
+  margin-top: 1rem;
+}
+
+.filelist .file {
+  padding: 1rem;
+  background: var(--neutral-200);
+  border: solid 1px var(--neutral-300);
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.filelist .fileprogress {
+  background: var(--primary-600);
+}
+
+.upload-error {
+  background: var(--red-600);
+  border: 0px var(--red-900) solid;
+  padding: 1rem;
+  color: var(--yellow-100);
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.geodir-add-files .geodir-files-dropbox .geodir-dropbox-file-types,
+.geodir-add-files .geodir-files-dropbox .geodir-dropbox-file-limit {
+  font-size: 12px;
+}
 
 /* Override for .et_pb_section */
 @media all and (min-width: 981px) {
@@ -165,7 +344,8 @@ input[type="checkbox"]:focus {
   margin-bottom: 1rem;
 }
 
-.wpcf7-form-control {
+.wpcf7-form-control,
+input[type="button"] {
   width: 100%;
 }
 
@@ -182,10 +362,44 @@ header.et-l.et-l--header {
   z-index: 2;
 }
 
+#main-header {
+  box-shadow: none;
+}
+
 /* Mobile Menu */
 
 #prezzo-header .et_pb_row {
   align-items: center;
+}
+
+/* Small fix to have mobile navigation fill width of page */
+#prezzo-header .et_pb_menu_inner_container,
+#prezzo-header .et_pb_column,
+#prezzo-header .et_pb_menu_0_tb_header {
+  position: initial;
+}
+
+#prezzo-header .et_mobile_menu li a,
+#prezzo-header .et_mobile_menu li a:visited {
+  color: var(--primary-600);
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid var(--primary-100);
+}
+
+#prezzo-header .et_mobile_menu li a:hover,
+#prezzo-header .et_mobile_menu li a:focus {
+  background-color: var(--primary-100);
+  color: var(--primary-600);
+  box-shadow: inset 0 -0.125em 0 var(--primary-600);
+}
+
+/* Responsive Styles Tablet And Below */
+@media all and (max-width: 980px) {
+  #prezzo-header .et_pb_fullwidth_menu .et_mobile_menu,
+  #prezzo-header .et_pb_menu .et_mobile_menu {
+    top: 70px;
+    padding: 1rem;
+  }
 }
 
 /* Navigation */
@@ -320,6 +534,7 @@ header.et-l.et-l--header {
   font-size: 48px;
   font-weight: 500;
   color: var(--red-800);
+  border: 5px solid;
   padding: 20px;
   width: 100px;
   height: 100px;
@@ -327,6 +542,8 @@ header.et-l.et-l--header {
   justify-content: center;
   align-items: center;
   position: relative;
+  background: hsla(8, 100%, 94%, 0.75);
+  box-shadow: 0 0 0 4px hsla(8, 100%, 94%, 0.75);
 }
 
 .prezzo-step {
@@ -353,11 +570,11 @@ header.et-l.et-l--header {
 .prezzo-step svg,
 .prezzo-circle svg {
   position: absolute;
-  font-size: 8rem;
+  font-size: 4rem;
   top: -1rem;
-  left: -1rem;
+  right: -1rem;
   transform: rotate(-5deg);
-  color: var(--pink-200);
+  color: var(--purple-300);
   z-index: -1;
 }
 
@@ -417,9 +634,22 @@ header.et-l.et-l--header {
   #benefits ul li {
     margin-bottom: 3rem;
   }
+  #benefits ul li svg {
+    top: -1rem;
+    left: -1rem;
+    transform: rotate(5deg);
+  }
 }
 
 /* Specials */
+
+/* Bottom buttons */
+.et_pb_bg_layout_light .et-pb-controllers a {
+  background-color: var(--pink-500);
+}
+.et_pb_bg_layout_light .et-pb-controllers .et-pb-active-control {
+  background-color: var(--pink-900);
+}
 
 /* TODO: May want to have specific colors for light/dark */
 #specials
@@ -446,6 +676,47 @@ header.et-l.et-l--header {
   outline: 4px solid var(--neutral-500);
 }
 
+#specials a.et-pb-arrow-prev,
+#specials a.et-pb-arrow-next,
+#specials a.et-pb-arrow-prev:visited,
+#specials a.et-pb-arrow-next:visited {
+  color: var(--pink-800);
+}
+
+#specials a.et-pb-arrow-prev:hover,
+#specials a.et-pb-arrow-next:hover,
+#specials a.et-pb-arrow-prev:focus,
+#specials a.et-pb-arrow-next:focus {
+  color: var(--pink-600);
+  box-shadow: none;
+  outline: 4px solid var(--pink-600);
+}
+
+#specials .et-pb-controllers a:hover,
+#specials .et-pb-controllers a:focus {
+  outline: none;
+}
+
+/* #specials .et_pb_post_slider_image_top .et_pb_slide_image {
+  margin-top: 0;
+  padding-top: 56.25%;
+}
+
+#specials .et_pb_post_slider_image_top .et_pb_slide_image img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: contain;
+}
+#specials .et_pb_slide_image,
+#specials .et_pb_slide_video {
+  width: 100%;
+} */
+
 /* Home Blog Posts Section */
 
 #blog-posts a,
@@ -454,29 +725,45 @@ header.et-l.et-l--header {
 }
 #blog-posts a:hover,
 #blog-posts a:focus {
-  color: var(--yellow-700);
-  box-shadow: inset 0 -0.07em 0 var(--yellow-700);
-}
-
-#blog-posts .entry-title a:hover,
-#blog-posts .entry-title a:focus,
-#blog-posts .entry-featured-image-url:hover,
-#blog-posts .entry-featured-image-url:focus {
-  box-shadow: none;
-}
-
-#blog-posts .entry-title a:hover,
-#blog-posts .entry-title a:focus {
-  color: var(--yellow-800);
-  outline: 2px solid var(--yellow-800);
-}
-#blog-posts .post-content p {
   color: var(--yellow-900);
+  outline: 2px solid var(--yellow-900);
+  box-shadow: none;
 }
 
 /* Blogroll  */
 
-/* #prezzo-blogroll {} */
+#prezzo-blogroll .entry-featured-image-url:hover,
+#prezzo-blogroll .entry-featured-image-url:focus {
+  box-shadow: none;
+}
+
+/* All blog post pages */
+
+#all-blog-post-page .et_pb_title_featured_container img {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+/* Responsive Styles Smartphone Only */
+@media all and (max-width: 767px) {
+  #all-blog-post-page .et_pb_title_featured_container img {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  #all-blog-post-page .entry-title {
+    margin: 0 2rem;
+  }
+
+  #all-blog-post-page .et_pb_title_meta_container {
+    margin: 0 2rem 2rem 2rem;
+  }
+}
+
+#all-blog-post-page .et_pb_bg_layout_light p.et_pb_title_meta_container {
+  color: var(--neutral-400);
+  margin-bottom: 0.25rem;
+}
 
 /* Footer */
 
