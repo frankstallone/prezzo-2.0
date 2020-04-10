@@ -4,7 +4,7 @@
  Author:       Frank Stallone
  Author URI:   http://stallone.dev
  Template:     Divi
- Version:      2.6
+ Version:      2.9
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -22,6 +22,7 @@
 
 body {
   color: var(--neutral-900) !important;
+  font-size: 16px;
 }
 
 h2,
@@ -165,6 +166,13 @@ input[type="checkbox"]:focus {
 }
 
 /* Global Sections */
+
+/* Global Page Template w/ Sidebar */
+
+#global-page-template-sidebar .et_pb_section,
+#global-page-template-no-sidebar .et_pb_section {
+  padding: 2rem 0;
+}
 
 /* GeoDirectory Overrides */
 .select2-container .select2-selection,
@@ -399,6 +407,9 @@ header.et-l.et-l--header {
   #prezzo-header .et_pb_menu .et_mobile_menu {
     top: 70px;
     padding: 1rem;
+    box-shadow: rgba(15, 15, 15, 0.05) 0px 0px 0px 1px,
+      rgba(15, 15, 15, 0.1) 0px 3px 6px,
+      rgba(15, 15, 15, 0.2) 0px 9px 24px;
   }
 }
 
@@ -479,6 +490,14 @@ header.et-l.et-l--header {
 #hero-content .et_pb_button:focus {
   background-color: var(--purple-800) !important;
   color: var(--purple-100) !important;
+}
+
+#hero-content .et_pb_column:nth-child(2) {
+  align-self: center;
+}
+
+.hero-button {
+  text-transform: uppercase;
 }
 
 /* Example of how to get Font Awesome icon before text in button */
@@ -661,19 +680,19 @@ header.et-l.et-l--header {
 }
 
 #specials .et_pb_slide_content {
-  color: var(--neutral-900);
+  color: var(--pink-900);
 }
 
 #specials a,
 #specials a:visited {
-  color: var(--neutral-700);
+  color: var(--pink-800);
 }
 
 #specials a:hover,
 #specials a:focus {
-  color: var(--neutral-500);
+  color: var(--pink-600);
   box-shadow: none;
-  outline: 4px solid var(--neutral-500);
+  outline: 4px solid var(--pink-600);
 }
 
 #specials a.et-pb-arrow-prev,
@@ -696,26 +715,32 @@ header.et-l.et-l--header {
 #specials .et-pb-controllers a:focus {
   outline: none;
 }
-
-/* #specials .et_pb_post_slider_image_top .et_pb_slide_image {
-  margin-top: 0;
-  padding-top: 56.25%;
+#specials .et_pb_post_slider_image_top .et_pb_slide_description {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-#specials .et_pb_post_slider_image_top .et_pb_slide_image img {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  object-fit: contain;
+#specials .et_pb_slider {
+  overflow: visible;
 }
-#specials .et_pb_slide_image,
-#specials .et_pb_slide_video {
-  width: 100%;
-} */
+
+@media (max-width: 980px) {
+  /* #specials .et_pb_slide_content {
+      font-size: 16px;
+      line-height: 1.25rem;
+  } */
+  #specials .et_pb_slider.et_pb_module .et_pb_slides .et_pb_slide_content {
+    font-size: 16px;
+    line-height: 1.25rem;
+  }
+  #specials
+    .et_pb_slider.et_pb_module
+    .et_pb_slides
+    .et_pb_slide_description
+    h2.et_pb_slide_title {
+    font-size: 30px;
+  }
+}
 
 /* Home Blog Posts Section */
 
@@ -775,6 +800,12 @@ header.et-l.et-l--header {
 #prezzo-footer #social-icons a:focus,
 #prezzo-footer #social-icons a:hover {
   box-shadow: none;
+}
+
+/* Contact Page */
+
+.page-id-13 #global-page-template-sidebar #contact-page-google-map {
+  padding-top: 0;
 }
 
 /* Quick reference guide to Divi's breakpoints */
