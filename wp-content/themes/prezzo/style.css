@@ -4,7 +4,7 @@
  Author:       Frank Stallone
  Author URI:   http://stallone.dev
  Template:     Divi
- Version:      2.13
+ Version:      2.14
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -179,6 +179,7 @@ input[type="checkbox"]:focus {
   padding: 2rem;
   background-color: #ffffff;
   border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  overflow: hidden;
 }
 
 #global-page-content .et_pb_fullwidth_header,
