@@ -1,2 +1,2 @@
 # Prezzo.it WordPress
-## Staging site codebase
+## Live 2.0 site codebase
